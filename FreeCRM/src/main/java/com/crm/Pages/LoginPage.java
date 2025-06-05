@@ -9,7 +9,7 @@ import com.crm.base.TestBase;
 public class LoginPage extends TestBase{
 
 	public void enterthecredentials(String user, String password) {
-		
+		System.out.println("Enter the credentials");
 	driver.findElement(By.xpath("//input[@name='email']")).sendKeys(user);
 	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
 	}
